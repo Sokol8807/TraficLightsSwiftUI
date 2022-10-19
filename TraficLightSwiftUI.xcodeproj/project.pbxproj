@@ -12,7 +12,7 @@
 		FDB78F7028FFAD00002EB7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB78F6F28FFAD00002EB7B4 /* Assets.xcassets */; };
 		FDB78F7328FFAD00002EB7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB78F7228FFAD00002EB7B4 /* Preview Assets.xcassets */; };
 		FDB78F7A28FFAE24002EB7B4 /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB78F7928FFAE24002EB7B4 /* ColorCircleView.swift */; };
-		FDB78F7C28FFB11F002EB7B4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB78F7B28FFB11F002EB7B4 /* ButtonView.swift */; };
+		FDB78F80290089B7002EB7B4 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB78F7F290089B7002EB7B4 /* BackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		FDB78F6F28FFAD00002EB7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB78F7228FFAD00002EB7B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDB78F7928FFAE24002EB7B4 /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
-		FDB78F7B28FFB11F002EB7B4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FDB78F7F290089B7002EB7B4 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				FDB78F6B28FFACFF002EB7B4 /* TraficLightSwiftUIApp.swift */,
 				FDB78F6D28FFACFF002EB7B4 /* ContentView.swift */,
-				FDB78F7B28FFB11F002EB7B4 /* ButtonView.swift */,
 				FDB78F7928FFAE24002EB7B4 /* ColorCircleView.swift */,
+				FDB78F7F290089B7002EB7B4 /* BackView.swift */,
 				FDB78F6F28FFAD00002EB7B4 /* Assets.xcassets */,
 				FDB78F7128FFAD00002EB7B4 /* Preview Content */,
 			);
@@ -144,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB78F7A28FFAE24002EB7B4 /* ColorCircleView.swift in Sources */,
+				FDB78F80290089B7002EB7B4 /* BackView.swift in Sources */,
 				FDB78F6E28FFACFF002EB7B4 /* ContentView.swift in Sources */,
-				FDB78F7C28FFB11F002EB7B4 /* ButtonView.swift in Sources */,
 				FDB78F6C28FFACFF002EB7B4 /* TraficLightSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
