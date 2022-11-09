@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ColorCircleView: View {
     
     let colorOfCircle: Color
@@ -21,7 +19,6 @@ struct ColorCircleView: View {
             .shadow(color: .cyan, radius: 6)
     }
 }
-
 
 struct ColorCircleView_Previews: PreviewProvider {
     static var previews: some View {

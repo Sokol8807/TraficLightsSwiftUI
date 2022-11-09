@@ -7,32 +7,40 @@
 
 import SwiftUI
 
-private let lightOn = 1.00
-private let lightOff = 0.4
+enum CurrentLigh {
+    case red, yellow, green
+}
 
 struct ContentView: View {
        
-    @State var currentPositionRed = lightOff
-    @State var currentPositionYellow = lightOff
-    @State var currentPositionGreen = lightOff
+    @State var currentPositionRed = 0.4
+    @State var currentPositionYellow = 0.4
+    @State var currentPositionGreen = 0.4
+    
+    @State  private var currentLight = CurrentLigh.red
+    
     @State var buttonTitle = "Start"
     
     private func nextColor () {
-        if currentPositionRed == lightOff &&
-            currentPositionYellow == lightOff &&
-            currentPositionGreen == lightOff {
+        let lightOn = 1.00
+        let lightOff = 0.4
+        
+        switch currentLight {
+        case .red:
+            currentLight = .yellow
             currentPositionRed = lightOn
-        } else if currentPositionRed == lightOn {
+            currentPositionGreen = lightOff
+        case .yellow:
+            currentLight = .green
             currentPositionRed = lightOff
             currentPositionYellow = lightOn
-        } else if currentPositionYellow == lightOn {
+        case .green:
+            currentLight = .red
             currentPositionYellow = lightOff
             currentPositionGreen = lightOn
-        } else if currentPositionGreen == lightOn {
-            currentPositionGreen = lightOff
         }
     }
-    
+            
     private func setLable() {
         if buttonTitle == "Start" {
             buttonTitle = "Next"
